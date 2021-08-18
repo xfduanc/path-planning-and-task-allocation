@@ -1,0 +1,91 @@
+Map size :  50
+( 42 , 42 )
+distance: 63.6738
+time :  0.8867  seconds
+distance: 68.5685
+time :  0.5731  seconds
+Map size :  50
+( 45 , 42 )
+distance: 64.0953
+time :  1.4631  seconds
+distance: 68.1543
+time :  1.0363  seconds
+Map size :  50
+( 41 , 43 )
+distance: 65.4786
+time :  1.3394  seconds
+distance: 68.3259
+time :  0.9814  seconds
+Map size :  50
+( 44 , 42 )
+distance: 64.9321
+time :  1.3494  seconds
+distance: 67.2548
+time :  1.2756  seconds
+Map size :  50
+( 42 , 42 )
+distance: 63.6422
+time :  1.3693  seconds
+distance: 68.5685
+time :  1.0004  seconds
+Map size :  50
+( 44 , 42 )
+No path found, algorithm failed!!!
+No path found, algorithm failed!!!
+Map size :  50
+( 45 , 44 )
+distance: 67.9629
+time :  1.4191  seconds
+distance: 80.6396
+time :  1.5089  seconds
+Map size :  50
+( 43 , 43 )
+distance: 67.6158
+time :  1.5060  seconds
+distance: 83.8823
+time :  1.1209  seconds
+Map size :  50
+( 43 , 43 )
+distance: 64.1315
+time :  1.4582  seconds
+distance: 69.9828
+time :  1.0246  seconds
+Map size :  50
+( 43 , 42 )
+distance: 64.1343
+time :  1.3903  seconds
+distance: 68.9828
+time :  1.0083  seconds
+Map size :  100
+( 92 , 83 )
+distance: 145.9741
+time :  4.8301  seconds
+distance: 186.3797
+time :  5.5382  seconds
+Map size :  100
+( 85 , 90 )
+distance: 134.8424
+time :  5.2031  seconds
+distance: 136.9239
+time :  3.6562  seconds
+Map size :  100
+( 81 , 83 )
+distance: 127.2258
+time :  5.4544  seconds
+distance: 149.8234
+time :  5.6140  seconds
+Map size :  100
+( 93 , 82 )
+distance: 144.9726
+time :  5.5507  seconds
+distance: 148.9655
+time :  5.6588  seconds
+Map size :  100
+( 88 , 92 )
+distance: 133.7709
+time :  5.3078  seconds
+distance: 137.6224
+time :  5.6628  seconds
+Map size :  100
+( 89 , 90 )
+distance: 131.8865

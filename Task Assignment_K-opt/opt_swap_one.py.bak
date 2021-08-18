@@ -1,0 +1,90 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+
+#在这里设置迭代停止条件，要多尝试一些不同数值，最好设置大一点
+MAXCOUNT = None
+
+#数据在这里输入，依次键入每个城市的坐标
+
+class OptSwapOne:
+    def __init__(self, MAX_LOOP:int, path, cities):
+        self.MAXCOUNT = MAX_LOOP
+        self.path = path
+        self.cities = cities
+
+    def calDist(self, xindex, yindex):
+        return (np.sum(np.power(self.cities[xindex] - self.cities[yindex], 2))) ** 0.5
+
+    def calPathDist(self, indexList):
+        sum = 0.0
+        for i in range(1, len(indexList)):
+            sum += self.calDist(indexList[i], indexList[i - 1])
+        return sum
+
+    #path1长度比path2短则返回true
+    def pathCompare(self, path1, path2):
+        if self.calPathDist(path1) <= self.calPathDist(path2):
+            return True
+        return False
+        
+    def generateRandomPath(self, bestPath):
+        a = np.random.randint(len(bestPath))
+        while True:
+            b = np.random.randint(len(bestPath))
+            if np.abs(a - b) > 1:
+                break
+        if a > b:
+            return b, a, bestPath[b:a+1]
+        else:
+            return a, b, bestPath[a:b+1]
+
+    def reversePath(self, path):
+        rePath = path.copy()
+        rePath[1:-1] = rePath[-2:0:-1]
+        return rePath
+        
+    def updateBestPath(self, bestPath):
+        count = 0
+        while count < self.MAXCOUNT:
+            
+            start, end, path = self.generateRandomPath(bestPath)
+            rePath = self.reversePath(path)
+            if self.pathCompare(path, rePath):
+                count += 1
+                continue
+            else:
+                count = 0
+                bestPath[start:end+1] = rePath
+        return bestPath
+        
+
+    def draw(self, bestPath):
+        print("Original Finally Generated : ", bestPath.tolist())
+        #fig = plt.figure(figsize=(10, 10), dpi=100)
+        ax = plt.subplot(111, aspect='equal')
+        ax.plot(cities[:, 0], cities[:, 1], 'x', color='blue')
+        for i,city in enumerate(cities):
+            ax.text(city[0], city[1], str(i))
+        ax.plot(cities[bestPath, 0], cities[bestPath, 1], color='red', linewidth=0.8, linestyle=':')
+        plt.title("General Algorithm Optimization")
+
+        plt.xlabel("X -Value", fontsize=14)
+        plt.ylabel("Y -Value", fontsize=14)
+         
+        plt.tick_params(axis='both', which='major', labelsize=14)
+        plt.show()
+
+        
+    
+    def run(self):
+        #随便选择一条可行路径
+        print("------------------Algorithm  Optimization-----------------")
+        start_time = time.time()
+
+        bestPath = self.updateBestPath(self.path.random_path)
+        print("distance:", '{:.4f}'.format( self.calPathDist(bestPath) ) )
+        print("time:", '{:.4f}'.format(time.time() - start_time) )
+        #print(bestPath.tolist())
+
+        self.draw(bestPath)

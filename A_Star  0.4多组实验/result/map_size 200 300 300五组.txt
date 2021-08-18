@@ -1,0 +1,93 @@
+Map size :  200
+( 169 , 179 )
+distance: 300.0950
+time :  14.5659  seconds
+distance: 313.3209
+time :  15.0886  seconds
+Map size :  200
+( 164 , 175 )
+distance: 312.3508
+time :  28.0693  seconds
+distance: 333.4163
+time :  20.7335  seconds
+Map size :  200
+( 163 , 165 )
+distance: 357.9189
+time :  29.0831  seconds
+distance: 399.9899
+time :  26.0364  seconds
+Map size :  200
+( 163 , 167 )
+distance: 260.6089
+time :  22.0714  seconds
+distance: 270.2498
+time :  19.5557  seconds
+Map size :  200
+( 181 , 171 )
+distance: 358.8902
+time :  30.6793  seconds
+distance: 371.5462
+time :  23.8333  seconds
+Map size :  200
+( 182 , 176 )
+distance: 296.6405
+time :  24.0526  seconds
+distance: 317.7473
+time :  24.2900  seconds
+Map size :  200
+( 174 , 178 )
+distance: 276.1071
+time :  21.7219  seconds
+distance: 281.7056
+time :  23.1182  seconds
+Map size :  200
+( 174 , 161 )
+distance: 244.5589
+time :  20.9920  seconds
+distance: 252.3036
+time :  23.3804  seconds
+Map size :  200
+( 174 , 194 )
+distance: 323.6225
+time :  38.6127  seconds
+distance: 393.6884
+time :  42.9442  seconds
+Map size :  200
+( 174 , 181 )
+distance: 302.3913
+time :  24.3276  seconds
+distance: 320.7473
+time :  16.4689  seconds
+Map size :  300
+( 264 , 294 )
+distance: 467.6885
+time :  53.6880  seconds
+distance: 518.0732
+time :  61.4081  seconds
+Map size :  300
+( 242 , 255 )
+distance: 391.1095
+time :  56.2644  seconds
+distance: 395.0975
+time :  55.6784  seconds
+Map size :  300
+( 242 , 247 )
+distance: 391.7221
+time :  54.9635  seconds
+distance: 503.7595
+time :  56.3767  seconds
+Map size :  300
+( 293 , 279 )
+distance: 482.3955
+time :  58.9755  seconds
+distance: 553.0021
+time :  63.0377  seconds
+Map size :  300
+( 295 , 285 )
+distance: 450.9615
+time :  63.8684  seconds
+distance: 459.1097
+time :  47.3638  seconds
+unable to alloc 6750000 bytes
+
+***Repl Closed***
